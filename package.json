@@ -1,0 +1,14 @@
+{
+  "name": "bro",
+  "version": "1.0.0",
+  "description": "nodes",
+  "main": "check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "quydx",
+  "license": "ISC",
+  "keywords": [
+    "quy"
+  ]
+}
