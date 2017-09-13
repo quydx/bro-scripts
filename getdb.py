@@ -6,20 +6,6 @@ from io import StringIO
 from io import BytesIO
 
 filename = 'response.txt'
-url = 'https://dgarchive.caad.fkie.fraunhofer.de/site/families.html'
-user = 'do'
-pwd = 'hyuticahuberarlentitus'
-"""
-with open('response.txt','wb') as f:
-	c = pycurl.Curl()
-	c.setopt(c.URL, url)
-	c.setopt(c.WRITEDATA, f)
-	c.setopt(pycurl.USERPWD, '%s:%s'%(user, pwd))
-	c.perform()
-	c.close()
-"""
-list_name = list()
-list_regex = list()
 with open(filename) as f:
 	content = f.readlines()
 	print(len(content))
