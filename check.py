@@ -5,14 +5,23 @@ import sys
 from elasticsearch import Elasticsearch
 # family list 
 # import MySQLdb
-def get_family(domain):
-	for family in dm_regex:
-		if re.match(r'%s' % family[1], domain):
-			return family[0]
-	return False
-def is_doc(domain):
+
+def is_doc(domain, family):
 	es = Elasticsearch()
-	res = es.search(index = 'dga', body = {"query": {"term": {"0": domain}}})
+	res = es.search(index = 'dga', body = {
+		"query" : {
+        	"constant_score" : { 
+            	"filter" : {
+                	"bool" : {
+                    	"must": [
+                        	 { "term": { "_type":  "%s" % family}},
+                         	 { "term": { "domain": "%s" % domain}}
+                     	]
+                	}
+            	}
+        	}
+    	}
+	})
 	if res['hits']['total'] > 0:
 		return res
 	else:

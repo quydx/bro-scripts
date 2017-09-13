@@ -1,0 +1,21 @@
+./dnscheck.py: line 1: from: command not found
+./dnscheck.py: line 2: import: command not found
+./dnscheck.py: line 3: import: command not found
+./dnscheck.py: line 4: from: command not found
+./dnscheck.py: line 5: import: command not found
+./dnscheck.py: line 8: syntax error near unexpected token `('
+./dnscheck.py: line 8: `with open('list-dga.txt', 'r') as file_content:'
+./dnscheck.py: line 1: from: command not found
+./dnscheck.py: line 2: import: command not found
+./dnscheck.py: line 3: import: command not found
+./dnscheck.py: line 4: from: command not found
+./dnscheck.py: line 5: import: command not found
+./dnscheck.py: line 8: syntax error near unexpected token `('
+./dnscheck.py: line 8: `with open('list-dga.txt', 'r') as file_content:'
+./dnscheck.py: line 1: from: command not found
+./dnscheck.py: line 2: import: command not found
+./dnscheck.py: line 3: import: command not found
+./dnscheck.py: line 4: from: command not found
+./dnscheck.py: line 5: import: command not found
+./dnscheck.py: line 8: syntax error near unexpected token `('
+./dnscheck.py: line 8: `with open('list-dga.txt', 'r') as file_content:'
